@@ -17,21 +17,22 @@ class Contact extends Component {
     render() {
         return (
             <div>
+                <h1>TRANG LIÊN HỆ</h1>
                 <Grid container justify='center' alignContent='center'>
                 <Grid item xs={6} md={4}>
                     <Paper elevation={4} style={{ padding: '20px 15px', marginTop: '30px' }}>
                         <Typography variant="headline" gutterBottom>
                             Signup
                         </Typography>
-                        <FormControl fullWidth margin='normal'>
+                        <FormControl fullWidth margin='normal'required>
                             <InputLabel>Username</InputLabel>
-                            <Input name='username' fullWidth />
+                            <Input  name='username' fullWidth />
                         </FormControl>
-                        <FormControl fullWidth margin='normal'>
+                        <FormControl fullWidth margin='normal' required>
                             <InputLabel>Email</InputLabel>
                             <Input name='email' fullWidth />
                         </FormControl>
-                        <FormControl fullWidth margin='normal'>
+                        <FormControl fullWidth margin='normal'required>
                             <InputLabel>Password</InputLabel>
                             <Input fullWidth name='password' type='password' />
                         </FormControl>
@@ -57,6 +58,7 @@ class Contact extends Component {
                                 variant='extendedFab'
                                 color='primary'
                                 type='submit'
+                               
                             >
                                 Signup
                                 </Button>
