@@ -4,7 +4,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1>Đổ ra dữ liệu</h1>
+                <h1>Nơi dữ liệu được đổ ra</h1>
             </div>
         );
     }
