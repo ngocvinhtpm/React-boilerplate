@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import { withFormik } from 'formik'
 import Input from '@material-ui/core/Input'
 import FormControl from '@material-ui/core/FormControl'
 import InputLabel from '@material-ui/core/InputLabel'
@@ -21,12 +22,17 @@ class Contact extends Component {
                 <Grid container justify='center' alignContent='center'>
                 <Grid item xs={6} md={4}>
                     <Paper elevation={4} style={{ padding: '20px 15px', marginTop: '30px' }}>
-                        <Typography variant="headline" gutterBottom>
+                        <Typography gutterBottom>
                             Signup
                         </Typography>
                         <FormControl fullWidth margin='normal'required>
                             <InputLabel>Username</InputLabel>
-                            <Input  name='username' fullWidth />
+                            <Input
+                                name='username' 
+                                fullWidth 
+                                value={this.props.values.username}
+                                onChange={this.props.handleChange} 
+                                />
                         </FormControl>
                         <FormControl fullWidth margin='normal' required>
                             <InputLabel>Email</InputLabel>
@@ -55,7 +61,6 @@ class Contact extends Component {
                         />
                         <FormControl fullWidth margin='normal'>
                             <Button
-                                variant='extendedFab'
                                 color='primary'
                                 type='submit'
                                
@@ -66,10 +71,20 @@ class Contact extends Component {
                     </Paper>
                 </Grid>
                 </Grid>
-            </div>
+                
+              
+
            
+           </div>
         );
     }
 }
+const FormikForm = withFormik({
+    mapPropsToValues() { // Init form field
+        return {
+            username: '',
+        }
+    },
+})(Contact)
 
-export default Contact;
+export default FormikForm;

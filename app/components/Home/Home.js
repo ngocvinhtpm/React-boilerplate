@@ -7,7 +7,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import axios from 'axios';
 
-class HomePage extends Component {
+class Home extends Component {
 
     constructor(props){
         super(props);
@@ -60,6 +60,6 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage;
+export default Home;
 
 

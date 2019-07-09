@@ -47,11 +47,13 @@ a {
 .footer p {
   text-align: center;
   padding-top: 10px;
+  font-weight: bold;
 }
 h1 {
   text-align: center;
   /* font-weight: bold; */
   text-transform: uppercase;
+
 }
 `;
 

@@ -14,19 +14,19 @@ class Header extends React.Component {
       return (
         <div>
           <Router>
-            <AppBar position="static" color="default">
-                <Toolbar>
-                     <Typography variant="h6" color="inherit">
-                        DEMO REACT
-                    </Typography>
-                    <Typography variant="h6" color="inherit">
-                      <Menu />
-                    </Typography>
-                </Toolbar>
-               
-            </AppBar>  
-            <Route exact path="/" component={Home} />
-            <Route path="/contact" component={Contact} />
+              <AppBar position="static" color="default">
+                  <Toolbar>
+                      <Typography variant="h6" color="inherit">
+                          DEMO REACT
+                      </Typography>
+                      <Typography variant="h6" color="inherit">
+                        <Menu />
+                      </Typography>
+                  </Toolbar>
+                
+              </AppBar>  
+              <Route exact path="/" component={Home} />
+              <Route path="/contact" component={Contact} />
             </Router>
         </div>
       );
