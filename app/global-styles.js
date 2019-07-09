@@ -55,6 +55,13 @@ h1 {
   text-transform: uppercase;
 
 }
+.MuiToolbar-root.MuiToolbar-regular.MTableToolbar-root-75.MuiToolbar-gutters {
+  background-color: white;
+}
+
+.MuiToolbar-root.MuiToolbar-regular.MuiTablePagination-toolbar.Component-paginationToolbar-72.MuiToolbar-gutters {
+  background-color: white;
+}
 `;
 
 export default GlobalStyle;
